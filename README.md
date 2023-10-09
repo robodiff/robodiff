@@ -1,5 +1,5 @@
 # Efficient automatic design of robots
-This git repo contains the code used in `Efficient automatic design of robots`, published in [PNAS](https://www.pnas.org/doi/10.1073/pnas.2305180120) on Oct 10th, 2023.
+This git repo contains the code used in `Efficient automatic design of robots`, published in [PNAS](https://www.pnas.org/doi/pdf/10.1073/pnas.2305180120) on Oct 10th, 2023.
 ## Bibtex
 ```Bibtex
 @article{
@@ -25,7 +25,7 @@ eprint = {https://www.pnas.org/doi/pdf/10.1073/pnas.2305180120},
 ```
 conda create --name public-robodiff python=3.7.15
 conda activate public-robodiff
-conda install -c conda-forge libstdcxx-ng=12 # 
+conda install -c conda-forge libstdcxx-ng=12
 
 pip install -r requirements.txt
 ```
