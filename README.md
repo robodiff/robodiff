@@ -52,7 +52,7 @@ If the design attempts are not visualized to the screen, there is a backup metho
 
 1. ```open ../frames/*.png```
 
-1. This last command should open many png files. Hit up or down arrows (or left and right arrows) to `flick` through the animation. The first design attempt is shown at the top. The last design attempt is shown at the bottom.
+1. This last command should open many png files. Hit up or down arrows (or left and right arrows) to "flick" through the animation. The first design attempt is shown at the top. The last design attempt is shown at the bottom.
 
 ## Running other examples.
 To run other demos, add the `--local_selection <a,...>` flag.
