@@ -1,5 +1,6 @@
 import argparse
 import datetime
+import os
 
 import taichi as ti
 from models.model_loaders import SimulationModel
@@ -260,10 +261,20 @@ def simulate(simModel,  enable_gui=True, epoch_idx=None, object_weight=0.25,  **
             'loss':l,
         }, open(f"{FIGURE_DATA_DIR}/{fname}", "wb"))
 
-    if args.gui and ( epoch_idx is None or epoch_idx in [0, 10,25, 50]) and not is_in_cluster(): # and enable_gui # epoch_idx < 10 or
+#   if args.gui and ( epoch_idx is None or epoch_idx in [0, 10,25, 50]) and not is_in_cluster(): # and enable_gui # epoch_idx < 10 or
+    if args.gui and not is_in_cluster(): # and enable_gui # epoch_idx < 10 or
+
         vis_title = ""
         if "title" in kwargs:
             vis_title = kwargs["title"]
+
+        os.system('mkdir frames')
+        os.system('mkdir frames/epoch' + str(epoch_idx) )
+        os.system('rm    frames/epoch' + str(epoch_idx) + '/*.npy') 
+        np.save(        'frames/epoch' + str(epoch_idx) + '/positions' + str(epoch_idx) , x_np[        :simModel.steps] )
+        np.save(        'frames/epoch' + str(epoch_idx) + '/actuation' + str(epoch_idx) , actuation_np[:simModel.steps] )
+        print('saving frame ' + str(epoch_idx) )
+
         visualization_callback([l],
                                 x_np[:simModel.steps],
                                 m_np_vis, actuation_np[:simModel.steps],
