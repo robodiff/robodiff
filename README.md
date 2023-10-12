@@ -50,7 +50,7 @@ If the design attempts are not visualized to the screen, there is a backup metho
 
 1. ```python matplotlib_visualizer.py```
 
-1. ```open *.png```
+1. ```open ../frames/*.png```
 
 1. This last command should open many png files. Hit up or down arrows (or left and right arrows) to `flick` through the animation. The first design attempt is shown at the top. The last design attempt is shown at the bottom.
 
