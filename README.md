@@ -44,6 +44,8 @@ If the design attempts are not visualized to the screen, there is a backup metho
 
 1. Make sure you have matplotlib installed: https://matplotlib.org/stable/users/installing/index.html
 
+1. Open a command window, and navigate into ```robodiff/visualization```
+
 ## Running other examples.
 To run other demos, add the `--local_selection <a,...>` flag.
 Available options are:
