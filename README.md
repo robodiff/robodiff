@@ -44,7 +44,15 @@ If the design attempts are not visualized to the screen, there is a backup metho
 
 1. Make sure you have matplotlib installed: https://matplotlib.org/stable/users/installing/index.html
 
-1. Open a command window, and navigate into ```robodiff/visualization```
+1. Open a command window.
+
+1. Navigate into ```robodiff/visualization```
+
+1. ```python matplotlib_visualizer.py```
+
+1. ```open *.png```
+
+1. This last command should open many png files. Hit up or down arrows (or left and right arrows) to `flick` through the animation. The first design attempt is shown at the top. The last design attempt is shown at the bottom.
 
 ## Running other examples.
 To run other demos, add the `--local_selection <a,...>` flag.
