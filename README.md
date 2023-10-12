@@ -38,6 +38,12 @@ This will load the first design attempt reported in the paper, and optimize it f
 
 The first & last design attempts will be visualized to the screen.
 
+## Visualization.
+
+If the design attempts are not visualized to the screen, there is a backup method for seeing your designs.
+
+1. Make sure you have matplotlib installed: https://matplotlib.org/stable/users/installing/index.html
+
 ## Running other examples.
 To run other demos, add the `--local_selection <a,...>` flag.
 Available options are:
